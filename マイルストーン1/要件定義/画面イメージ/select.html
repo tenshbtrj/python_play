@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>選択画面</title>
+  </head>
+  <body onload="disableTag('ver1')">
+    <a href="./select.html">select.html</a><br />
+    <hr />
+    <button onclick="disableTag('ver1')">ver1</button>
+    <button onclick="disableTag('ver2')">ver2</button>
+    <hr />
+    <div id="ver1">
+      　<a href="./ver1/stylish.html">stylish.html</a><br />
+      　<a href="./ver1/colorful.html">colorful.html</a><br />
+      　<a href="./ver1/expandable.html">expandable.html</a><br />
+      　<a href="./ver1/futuristic.html">futuristic.html</a><br />
+      　<a href="./ver1/playful.html">playful.html</a><br />
+      　<a href="./ver1/natural.html">natural.html</a><br />
+      ★<a href="./ver1/expandable_ver2.html">expandable_ver2.html</a><br />
+      　<a href="./"></a><br />
+    </div>
+    <div id="ver2">
+      　<a href="./ver2/"></a><br />
+    </div>
+  </body>
+  <script>
+    let idList = ["ver1", "ver2"];
+    function disableTag(id) {
+      for (let item of idList) {
+        document.getElementById(item).style.display = "none";
+      }
+      document.getElementById(id).style.display = "block";
+    }
+  </script>
+</html>

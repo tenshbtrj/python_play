@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable ToDo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #00796b;
+        }
+        .todo-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .todo-item {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .todo-item:last-child {
+            border-bottom: none;
+        }
+        .add-todo {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        button {
+            background: #00796b;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .filter-container {
+            margin: 20px 0;
+        }
+        .filter-button {
+            margin-right: 10px;
+            background: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Expandable ToDo List</h1>
+    <div class="todo-container">
+        <div class="add-todo">
+            <input type="text" placeholder="新しいタスクを追加" />
+            <button>追加</button>
+        </div>
+        <div class="filter-container">
+            <button class="filter-button">全て表示</button>
+            <button class="filter-button">完了したタスク</button>
+            <button class="filter-button">未完了のタスク</button>
+        </div>
+        <div class="todo-item">
+            <span>タスク 1</span>
+            <input type="checkbox" />
+        </div>
+        <div class="todo-item">
+            <span>タスク 2</span>
+            <input type="checkbox" />
+        </div>
+        <div class="todo-item">
+            <span>タスク 3</span>
+            <input type="checkbox" />
+        </div>
+    </div>
+</body>
+</html>
