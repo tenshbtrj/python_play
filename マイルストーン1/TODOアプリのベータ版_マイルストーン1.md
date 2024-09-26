@@ -25,7 +25,7 @@
 
 ### データベース設計 (2日)
 - 〇タスクデータモデルの設計
-- SQLiteまたはPostgreSQLのセットアップ
+- 〇SQLiteまたはPostgreSQLのセットアップ
 
 ### バックエンド実装 (4日)
 - FlaskまたはDjangoを用いたAPIの基本構築
