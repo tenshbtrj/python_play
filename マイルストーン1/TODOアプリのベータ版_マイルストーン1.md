@@ -28,6 +28,7 @@
 - 〇SQLiteまたはPostgreSQLのセットアップ
 
 ### バックエンド実装 (4日)
+- APIの設計、資料作成
 - FlaskまたはDjangoを用いたAPIの基本構築
 - タスクのCRUD操作を実装
 
